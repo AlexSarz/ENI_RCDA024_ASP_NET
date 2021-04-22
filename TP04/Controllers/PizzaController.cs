@@ -3,21 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using BO;
+using TP04.Models;
+using TP04.Utils;
 
 namespace TP04.Controllers
 {
     public class PizzaController : Controller
     {
+
         // GET: Pizza
         public ActionResult Index()
         {
-            return View();
-        }
-
-        // GET: Pizza/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
+            return View(FakeDb.Instance.Pizzas);
         }
 
         // GET: Pizza/Create
@@ -45,7 +43,10 @@ namespace TP04.Controllers
         // GET: Pizza/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            PizzaViewModel vm = new PizzaViewModel();
+            vm.Pizza = FakeDb.Instance.Pizzas.FirstOrDefault(x => x.Id == id);
+            vm.Id = vm.Pizza.Id;
+            return View(vm);            
         }
 
         // POST: Pizza/Edit/5
@@ -67,7 +68,7 @@ namespace TP04.Controllers
         // GET: Pizza/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(FakeDb.Instance.Pizzas.FirstOrDefault(x => x.Id == id));
         }
 
         // POST: Pizza/Delete/5
@@ -76,8 +77,7 @@ namespace TP04.Controllers
         {
             try
             {
-                // TODO: Add delete logic here
-
+                FakeDb.Instance.Pizzas.Remove(FakeDb.Instance.Pizzas.FirstOrDefault(x => x.Id == id));
                 return RedirectToAction("Index");
             }
             catch
