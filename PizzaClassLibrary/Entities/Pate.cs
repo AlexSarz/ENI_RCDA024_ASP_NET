@@ -1,6 +1,6 @@
-﻿namespace BO
+﻿namespace PizzaClassLibrary.Entities
 {
-    public class Ingredient
+    public class Pate
     {
         public int Id { get; set; }
         public string Nom { get; set; }
