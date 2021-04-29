@@ -4,10 +4,10 @@ using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Web.Mvc;
-using TP06_BO;
 using TP06.Models;
+using TP06_BO;
 
-namespace Dojo.Controllers
+namespace TP06.Controllers
 {
     public class ArmesController : Controller
     {

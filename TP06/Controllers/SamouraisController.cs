@@ -4,7 +4,7 @@ using System.Web.Mvc;
 using TP06_BO;
 using TP06.Models;
 
-namespace Dojo.Controllers
+namespace TP06.Controllers
 {
     public class SamouraisController : Controller
     {
