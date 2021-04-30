@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP06", "TP06\TP06.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP06_BO", "C:\Users\USER\Downloads\Le développement Web côté serveur – BackEnd avec ASP.NET\Module 6\Module 06 - Énoncé TP 01 - Le Dojo – partie 1\Ressources Module 06 - Enoncé TP 01\TP06_BO.csproj", "{0BBA0441-0AB7-4112-946B-521C9CEC7367}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dojo2", "C:\Users\USER\Downloads\DOJO2.1-main\DOJO2.1-main\Dojo2\Dojo2.csproj", "{6827376A-C843-42A2-94D8-2F277F65103A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{0BBA0441-0AB7-4112-946B-521C9CEC7367}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BBA0441-0AB7-4112-946B-521C9CEC7367}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BBA0441-0AB7-4112-946B-521C9CEC7367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6827376A-C843-42A2-94D8-2F277F65103A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6827376A-C843-42A2-94D8-2F277F65103A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6827376A-C843-42A2-94D8-2F277F65103A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6827376A-C843-42A2-94D8-2F277F65103A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
